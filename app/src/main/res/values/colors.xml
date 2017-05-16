@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#4a4d52</color>
+    <color name="colorAccent">#03a9f4</color>
+    <color name="sky_blue">#03a9f4</color>
+    <color name="grey">#959595</color>
+    <color name="lite_grey">#D3D3D3</color>
+
+    <color name="black">#000000</color>
+    <color name="lite_green">#C5F3F3</color>
+    <color name="text_blue">#108BEA</color>
+    <color name="nav_blue">#066CAE</color>
+    <color name="facebook">#3b59a1</color>
+
+    <color name="bc">#63caf9</color>
+    <color name="bc_B">#1bb1f5</color>
+    <!--  <color name="blue">#06588c</color>
+      <color name="red">#C7434C</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="button_border">#D39692</color>
+    <color name="teal_100">#b2dfdb</color>
+    <color name="teal_500">#009688</color>
+    <!-- Home screen -->
+    <color name="description_text">#5A5584</color>
+    <color name="title_text">#6E6E6E</color>
+    <color name="orange">#fc9215</color>
+    <color name="dealsbg">#C9C9C9</color>
+    <color name="persentbg">#e9e9eb</color>
+    <color name="categoriesbg">#d6d5db</color>
+    <!--navigation-->
+    <color name="nav_background_color">#ffffff</color>
+    <color name="color_blue">#40cfff</color>
+    <color name="toolbar_background_color">#065485</color>
+    <color name="short_menu_layout">#a5a3a4</color>
+    <!--sliding window-->
+    <color name="email_hint">#9B9B9B</color>
+    <color name="fb_button_background">#536B9F</color>
+    <color name="home_tv_em_fb">#ffff</color>
+    <color name="signin_button_color">#2F7BAB</color>
+    <color name="signup_view_color">#b1b1b1</color>
+    <color name="signin_heading_color">#2F7BAB</color>
+
+    <color name="blue">#2f7bab</color>
+    <color name="red">#b00000</color>
+    <color name="signup_color">#a3a1a1</color>
+
+    <!--  profile   -->
+    <color name="profile_text_color">#ffffff</color>
+
+    <color name="email_text_color">#000</color>
+
+    <color name="submit_text_color">#ffffff</color>
+
+    <color name="title_color">#ffffff</color>
+
+    <color name="heading">#5D3D87</color>
+
+    <color name="btn_text_color">#ffffff</color>
+
+    <color name="profile_bg">#FF5D3D87</color>
+</resources>

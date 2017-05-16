@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dealsbg"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/likes_toolbar"
+        layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_user_liked_deals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/likes_toolbar"
+
+        android:layout_marginLeft="@dimen/recycleview_margin"
+        android:layout_marginRight="@dimen/recycleview_margin"
+        android:scrollbars="none" />
+    <TextView
+        android:id="@+id/tv_likes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="you don't have any likes till now!!!"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/progressbar_user_likes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

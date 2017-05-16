@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/activity_my_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/sky_blue"
+        android:gravity="center|left">
+
+        <com.ngagroupinc.movers.Roboto.CustomTextView
+            android:id="@+id/tab_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_regular"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/backarrow"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text" />
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/backarrowwhite" />
+
+
+    </RelativeLayout>
+</LinearLayout>

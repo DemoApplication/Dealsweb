@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dealsbg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rll_home_pages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_my_relativeLayout"
+            android:layout_marginBottom="45dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <com.ngagroupinc.movers.Roboto.CustomTextView
+                            android:id="@+id/discount_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="$ 525"
+                            android:textColor="#010101"
+                            android:textSize="@dimen/discount_price_text"
+                            app:typeface="roboto_regular" />
+                        <com.ngagroupinc.movers.Roboto.CustomTextView
+                            android:id="@+id/retail_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/discount_price"
+                            android:text="$ 546"
+                            android:textSize="@dimen/discount_price_text"
+                            app:typeface="roboto_regular" />
+                    </RelativeLayout>
+                    <com.ngagroupinc.movers.Roboto.CustomTextView
+                        android:id="@+id/percent_discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/retail_price"
+                        android:gravity="center"
+                        android:text="Save 40%"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp"
+                        app:typeface="roboto_regular" />
+                    <com.ngagroupinc.movers.Roboto.CustomTextView
+                        android:id="@+id/store_name_singlepage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Men's Jacket"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:typeface="roboto_regular" />
+
+                    <!--          <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content">
+
+                                  <TextView
+                                      android:id="@+id/likes_singlepage"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_alignParentRight="true"
+                                      android:layout_marginRight="54dp"
+                                      android:text="5"
+                                      android:textSize="12sp" />&ndash;&gt;
+
+                                  <TextView
+                                      android:id="@+id/views_singlepage"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_alignParentRight="true"
+                                      android:layout_marginRight="21dp"
+                                      android:text="5"
+                                      android:textSize="12sp" />&ndash;&gt;
+
+                              </RelativeLayout>-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="3dp"
+                            android:gravity="bottom">
+                            <com.ngagroupinc.movers.Roboto.CustomTextView
+                                android:id="@+id/product_name_singlepage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="4dp"
+                                android:text="Koilis"
+                                app:typeface="roboto_regular" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/heart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_toLeftOf="@+id/hearttwo"
+                            android:gravity="center">
+                            <com.ngagroupinc.movers.Roboto.CustomTextView
+                                android:id="@+id/likes_singlepage"
+                                android:layout_width="17dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="3dp"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textSize="12sp"
+                                app:typeface="roboto_regular" />
+                            <ImageView
+                                android:id="@+id/likes_imageview"
+                                android:layout_width="17dp"
+                                android:layout_height="17dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/hearticon" />
+                        </RelativeLayout>
+                        />
+                        <RelativeLayout
+                            android:id="@+id/hearttwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="4dp">
+                            <com.ngagroupinc.movers.Roboto.CustomTextView
+                                android:id="@+id/views_singlepage"
+                                android:layout_width="17dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="0dp"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textSize="12sp"
+                                app:typeface="roboto_regular" />
+                            <ImageView
+                                android:layout_width="17dp"
+                                android:layout_height="21.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/eye_icon"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_toLeftOf="@id/heart">
+                            <ImageView
+                                android:layout_width="17dp"
+                                android:layout_height="17dp"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/share_icon" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.ngagroupinc.movers.Roboto.CustomTextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:text="DESCRIPTION"
+                            app:typeface="roboto_regular" />
+                        <com.ngagroupinc.movers.Roboto.CustomTextView
+                            android:id="@+id/description_single_page"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left"
+                            android:lineSpacingExtra="4dp"
+                            android:text="description"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:typeface="roboto_regular" />
+                        <com.ngagroupinc.movers.Roboto.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:text="REVIEWS"
+                            android:textColor="@color/black"
+                            app:typeface="roboto_regular" />
+                        <com.ngagroupinc.movers.Roboto.CustomEditText
+                            android:id="@+id/edittext_review"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_bg"
+                            android:cursorVisible="false"
+                            android:textColorHint="@color/grey"
+                            android:gravity="top|left"
+                            android:inputType="textMultiLine"
+                            android:lines="5"
+                            android:hint="write a comment"
+                            android:maxLines="10"
+                            android:minLines="4"
+                            android:maxLength="40000"
+                            android:paddingLeft="5dp"
+                            android:scrollbars="vertical"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            app:typeface="roboto_regular" />
+
+                        <com.ngagroupinc.movers.Roboto.CustomButton
+                            android:id="@+id/post_review"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_bg_blue"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Post your review"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            app:typeface="roboto_medium" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/review_recycleView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/recycleview_margin"
+                            android:layout_marginRight="@dimen/recycleview_margin"
+                            android:layout_marginTop="5dp"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+
+                    <!--      <RelativeLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center|right"
+
+                              android:orientation="horizontal"
+
+                              >
+
+                              <TextView
+                                  android:id="@+id/view_description"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+
+                                  android:layout_toLeftOf="@+id/arrawside"
+
+                                  android:paddingLeft="5dp"
+
+                                  android:padding="5dp"
+                                  android:text="View Full Description"
+                                  android:textColor="@color/blue"
+                                  android:textSize="14sp" />
+
+                              <ImageView
+                                  android:id="@+id/arrawside"
+                                  android:layout_width="11dp"
+                                  android:layout_height="10dp"
+                                  android:layout_alignParentRight="true"
+
+                                  android:layout_marginTop="11dp"
+                                  android:src="@drawable/arrowone" />
+                          </RelativeLayout>-->
+                </LinearLayout>
+                <com.ngagroupinc.movers.Roboto.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="SIMILAR DEALS"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:typeface="roboto_regular" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ProgressBar
+                        android:id="@+id/progressbar_similarproducts2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                    <ProgressBar
+                        android:id="@+id/progressbar_similarproducts1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/singleactivity_recycle1"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                    <com.ngagroupinc.movers.Roboto.CustomButton
+                        android:id="@+id/loadmore_similarproducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/singleactivity_recycle1"
+                        android:layout_marginBottom="2.5dp"
+                        android:background="@color/white"
+                        android:text="view more"
+                        android:textColor="@color/orange"
+                        android:visibility="gone"
+                        app:typeface="roboto_medium" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/singleactivity_recycle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/recycleview_margin"
+                        android:layout_marginRight="@dimen/recycleview_margin"
+                        android:scrollbars="vertical" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <LinearLayout
+            android:id="@+id/get_this_deals_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/innerLine2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/orange" />
+            <LinearLayout
+                android:id="@+id/get_this_deals_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+android:visibility="gone"
+                android:weightSum="10">
+                <com.ngagroupinc.movers.Roboto.CustomTextView
+                    android:id="@+id/end_date_singlepage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:text="EXPIRES: 12/0/2016"
+                    android:textSize="13dp"
+
+                    app:typeface="roboto_regular" />
+                <com.ngagroupinc.movers.Roboto.CustomButton
+                    android:id="@+id/get_this_deal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:background="@color/blue"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/aa"
+                    android:gravity="center"
+                    android:paddingRight="20dp"
+                    android:text="GET THIS DEAL"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:typeface="roboto_medium" />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Get This Deal"
+                android:background="@color/blue"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/aa"
+                android:paddingRight="100dp"
+                android:paddingLeft="100dp"
+                android:visibility="gone"
+                android:id="@+id/getthisdeal_button"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/activity_my_relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/sky_blue"
+            android:gravity="center|left">
+
+            <com.ngagroupinc.movers.Roboto.CustomTextView
+                android:id="@+id/tab_text"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/backarrow"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_text"
+                app:typeface="roboto_regular" />
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/backarrowwhite" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/fb_layout"
+        layout="@layout/facebook_layout" />
+</RelativeLayout>

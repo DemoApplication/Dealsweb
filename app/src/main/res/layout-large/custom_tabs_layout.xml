@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tabs_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="56sp"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal">
+
+
+<com.ngagroupinc.movers.Roboto.CustomTextView
+    android:id="@+id/tabs_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:typeface="roboto_regular"
+    android:layout_centerInParent="true"
+    android:text="hghghg"
+    android:textSize="24sp" />
+
+<View
+    android:id="@+id/view_tabs"
+    android:layout_width="2dp"
+    android:layout_height="22dp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:background="#4DffffFF" />
+
+</RelativeLayout>

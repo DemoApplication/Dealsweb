@@ -1,0 +1,354 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rll_home_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rll_home_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        >
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+
+            >
+
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/nav_blue"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                <!--
+                                <android.support.design.widget.CollapsingToolbarLayout
+                                    android:id="@+id/collapsing_toolbar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:fitsSystemWindows="true"
+                                    app:collapsedTitleTextAppearance="@style/collapsedappbar"
+                                    app:expandedTitleTextAppearance="@style/expandedappbar"
+                                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                                    app:titleEnabled="false">
+
+
+                                    &lt;!&ndash;     <android.support.v7.widget.Toolbar
+                                             android:id="@+id/toolbar"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:background="?attr/colorPrimary"
+                                             android:minHeight="?attr/actionBarSize"
+                                             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                                             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                                         </android.support.v7.widget.Toolbar>&ndash;&gt;
+                                </android.support.design.widget.CollapsingToolbarLayout>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/toggle1"
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:padding="3dp"
+                            android:src="@drawable/toggle"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/item_image2"
+                            android:layout_width="45dp"
+                            android:layout_height="27dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@id/toggle1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/logo"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@+id/profile"
+                        android:text="Sign in"
+                        android:textColor="@color/signin_heading_color" />
+
+                    <ImageView
+                        android:id="@+id/profile"
+                        android:layout_width="32dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/profileone"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/search_home"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toLeftOf="@+id/profile"
+                        android:src="@drawable/srch_icon" />
+                </RelativeLayout>
+                <!--    <EditText
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_round"
+                        android:drawableRight="@drawable/search"
+                        android:hint="Search"
+                        android:paddingRight="10dp" />-->
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dealsbg">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/categort_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="6dp"
+                        android:scrollbars="vertical" />
+
+
+                    <TextView
+                        android:id="@+id/latest_deals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llayout"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="0dp"
+                        android:text="LATEST DEALS"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/deals_textSize" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/latestdeals_recycleview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/latest_deals"
+
+                        android:layout_margin="@dimen/recycleview_margin"
+                        android:scrollbars="none" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_latestdeasl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/latestdeals_recycleview"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/categort_recyclerView"
+                        android:background="@color/dealsbg"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/offerdeals"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:background="@color/persentbg"
+                                android:orientation="horizontal"
+                                android:weightSum="3.8">
+
+                                <com.ngagroupinc.movers.Roboto.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="7dp"
+                                    android:text="Browse by "
+                                    app:typeface="roboto_regular"
+                                    android:textColor="@color/blue" />
+
+                                <com.ngagroupinc.movers.Roboto.CustomButton
+                                    android:id="@+id/h80_persent_deals"
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="1dp"
+                                    app:typeface="roboto_medium"
+                                    android:layout_weight="1"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:text="80% Off"
+                                    android:textColor="@color/orange"
+                                    android:textSize="14sp" />
+
+                                <View
+                                    android:id="@+id/innerLine"
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="#cfcfcf" />
+
+                                <com.ngagroupinc.movers.Roboto.CustomButton
+                                    android:id="@+id/h70_persent_deals"
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="1dp"
+                                    app:typeface="roboto_medium"
+                                    android:layout_weight="1"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:text="70% Off"
+                                    android:textColor="@color/orange"
+                                    android:textSize="14sp" />
+
+                                <View
+                                    android:id="@+id/innerLine1"
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="#cfcfcf" />
+
+                                <com.ngagroupinc.movers.Roboto.CustomButton
+                                    android:id="@+id/h60_persent_deals"
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="1dp"
+                                    app:typeface="roboto_medium"
+                                    android:layout_weight="1"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:text="60% Off"
+                                    android:textColor="@color/orange"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <include
+                            layout="@layout/recycleview_deals"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <!-- <android.support.v7.widget.CardView
+                             xmlns:android="http://schemas.android.com/apk/res/android"
+                             xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                             android:id="@+id/card_view"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="5dp">
+                 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                            android:orientation="horizontal"
+
+                            >
+
+                            <com.ngagroupinc.movers.Roboto.CustomTextView
+                                android:id="@+id/viewall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:padding="7dp"
+                                app:typeface="roboto_regular"
+                                android:text="View All"
+                                android:textAllCaps="false"
+                                android:textColor="#1f83bf"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/arrowone" />
+                        </LinearLayout>
+
+                        <!--  </android.support.v7.widget.CardView>-->
+
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/loadmore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/latestdeals_recycleview"
+                        android:background="@color/white"
+                        android:text="view more"
+                        android:visibility="gone"
+                        android:textColor="@color/orange"
+                        />
+                </RelativeLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/fb_layout"
+        layout="@layout/facebook_layout"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dealsbg"
+    android:orientation="vertical">
+
+    <com.ngagroupinc.movers.Roboto.CustomTextView
+        android:id="@+id/dealtstitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offerdeals"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:typeface="roboto_regular"
+        android:layout_marginBottom="5dp"
+        android:text="HOTTEST DEALS"
+        android:textColor="@color/black"
+        android:textSize="@dimen/deals_tabs_textSize"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/deals_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dealtstitle"
+
+        android:layout_marginLeft="@dimen/recycleview_margin"
+        android:layout_marginRight="@dimen/recycleview_margin"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dealsbg">
+<LinearLayout
+    android:id="@+id/llv_subcateg_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include android:id="@+id/toobar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/dealstype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/rll_header"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/subcategort_names_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.5dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dealstype"
+        android:background="@color/dealsbg"
+        android:orientation="vertical">
+        <com.ngagroupinc.movers.Roboto.CustomTextView
+            android:id="@+id/subcategories_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:typeface="roboto_regular"
+            android:text="HOTTESTDEALS"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+        <ProgressBar
+            android:id="@+id/progressbar_subcat"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/subcategory_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/dealsbg"
+            android:scrollbars="none" />
+
+        <com.ngagroupinc.movers.Roboto.CustomTextView
+            android:id="@+id/nodeals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:typeface="roboto_regular"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_endless1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <com.ngagroupinc.movers.Roboto.CustomTextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:typeface="roboto_regular"
+            android:text="No Records"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+
+    </LinearLayout>
+    <include
+    android:id="@+id/fb_layout"
+    layout="@layout/facebook_layout"/>
+    <View
+        android:id="@+id/innerLineuu"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/categories_recyclerView"
+        android:background="@color/dealsbg" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/categories_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="6dp"
+        android:scrollbars="vertical"
+        android:visibility="visible"/>
+</RelativeLayout>

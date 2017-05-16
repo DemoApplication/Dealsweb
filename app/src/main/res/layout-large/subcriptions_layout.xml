@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/lite_grey"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/hotestdeals_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@color/sky_blue"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/not_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:id="@+id/backarrow1"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+
+
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/backarrowwhite" />
+
+            <com.ngagroupinc.movers.Roboto.CustomTextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/backarrow1"
+                android:text="Subscriptions"
+                app:typeface="roboto_regular"
+                android:layout_marginTop="0dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/subscriptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6.5dp"
+        android:scrollbars="none" />
+</LinearLayout>

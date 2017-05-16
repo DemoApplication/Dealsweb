@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_toast_layout_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="10dp">
+
+    <com.ngagroupinc.movers.Roboto.CustomTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Oops!"
+        app:typeface="roboto_bold"
+        android:textSize="24sp"
+      />
+
+    <com.ngagroupinc.movers.Roboto.CustomTextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check your network connection."
+        android:textColor="@color/black"
+        android:layout_below="@+id/text"
+        android:textSize="24sp"
+        app:typeface="roboto_regular"
+        android:layout_marginTop="24dp" />
+
+    <com.ngagroupinc.movers.Roboto.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ok"
+        android:text="ok"
+        app:typeface="roboto_medium"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="55dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

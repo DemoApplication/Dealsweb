@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="#a5a4a4"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp">
+
+
+    <!--   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_marginTop="40dp"
+           android:layout_marginBottom="14dp"
+           >-->
+    <!--  <com.skyfishjy.library.RippleBackground
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/content"
+          android:layout_width="50dp"
+          android:layout_height="40dp"
+          app:rb_color="#0099CC"
+          android:layout_marginTop="22dp"
+          app:rb_duration="100"
+          app:rb_radius="18dp"
+          app:rb_rippleAmount="1"
+          app:rb_scale="1"
+          app:rb_type="fillRipple">-->
+    <ImageView
+        android:id="@+id/iv_back_categories"
+        android:layout_width="46dp"
+        android:layout_height="match_parent"
+        android:paddingTop="14dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/backarrowwhite" />
+    <!--
+        </com.skyfishjy.library.RippleBackground>
+    -->
+
+    <com.ngagroupinc.movers.Roboto.CustomTextView
+        android:id="@+id/title_sub_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="dfgh"
+        app:typeface="roboto_regular"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textColor="#f5f4f4"
+        android:textSize="15sp" />
+    <!-- </LinearLayout>-->
+    <!-- <View
+         android:id="@+id/view_category_list_up"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="#62bababa"
+         />-->
+</LinearLayout>

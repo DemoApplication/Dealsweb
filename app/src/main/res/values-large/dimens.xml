@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_text_size">16dp</dimen>
+    <dimen name="normal_text_size">23sp</dimen>
+    <dimen name="strike_size">21sp</dimen>
+    <dimen name="discount">9dp</dimen>
+
+    <dimen name="home_tv_fb_size">14sp</dimen>
+    <dimen name="home_iv_fb_margin_left">16dp</dimen>
+
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <!--   profile-->
+
+    <dimen name="profile_size">18sp</dimen>
+
+    <dimen name="email_size">12sp</dimen>
+
+    <dimen name="fname_size">24sp</dimen>
+
+    <dimen name="tv_welcome">35sp</dimen>
+
+    <dimen name="tv_to">35sp</dimen>
+
+    <dimen name="tv_google">35sp</dimen>
+
+    <dimen name="tv_subquote">20sp</dimen>
+
+    <dimen name="tv_home">20sp</dimen>
+
+    <dimen name="lname_size">20sp</dimen>
+
+    <dimen name="submit_size">20sp</dimen>
+
+    <dimen name="screen_name">20sp</dimen>
+
+    <dimen name="screen_namefirst">20sp</dimen>
+
+    //mainone
+    <dimen name="recycleview_margin">4.5dp</dimen>
+    <dimen name="cardview_list_row_margin">6.5dp</dimen>
+    <dimen name="deals_textSize">15dp</dimen>
+
+    //singleactivity
+    <dimen name="toolbar_text">28sp</dimen>
+    <dimen name="discount_price_text">28dp</dimen>
+    <dimen name="bottom_bottons_text_size">24sp</dimen>
+
+    <dimen name="spinner_text_size">24sp</dimen>
+</resources>

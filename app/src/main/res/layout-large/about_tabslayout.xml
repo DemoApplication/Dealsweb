@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toobar"
+            layout="@layout/toolbar" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="@color/toolbar_background_color"
+            android:showDividers="none"
+            android:soundEffectsEnabled="true"
+            android:splitMotionEvents="true"
+            />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.05"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <ScrollView
+            android:id="@+id/sv_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/rll_web_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_privacy_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="14dp"
+                        android:gravity="center"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/nav_blue"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:id="@+id/tv_privacy_policy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/tv_privacy_heading"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/about_txt_one"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left"
+                        android:lineSpacingExtra="5dp"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_year_privacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_privacy_policy"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left"
+                        android:lineSpacingExtra="5dp"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</TabHost>

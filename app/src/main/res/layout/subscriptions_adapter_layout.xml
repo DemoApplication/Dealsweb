@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    android:orientation="vertical">
+
+   <!-- <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/cardview_boarder"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="1dp">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+
+            android:layout_height="match_parent">
+
+            <!--<view
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+     android:layout_below="@+id/categories_circleImage"
+    android:background="#B1BCBE"></view>-->
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/categories_circleImage"
+                android:background="#c9c9c9">
+            </View>-->
+            <com.ngagroupinc.movers.Roboto.CustomTextView
+                android:id="@+id/categories_text1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/categories_circleImage"
+                android:layout_marginBottom="2dp"
+                android:text="Accessories"
+                app:typeface="roboto_regular"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/categories_circleImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/transparent"
+                />
+            <ImageView
+                android:id="@+id/tick"
+                android:layout_width="40dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+
+                android:src="@drawable/tick_icon"
+
+                />
+        </RelativeLayout>
+
+  <!--  </android.support.v7.widget.CardView>-->
+
+    <com.ngagroupinc.movers.Roboto.CustomTextView
+        android:id="@+id/numbercount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:typeface="roboto_regular"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</LinearLayout>

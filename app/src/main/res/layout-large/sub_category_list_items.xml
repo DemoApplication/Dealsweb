@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/grid_color_selector"
+    android:orientation="vertical">
+
+    <com.ngagroupinc.movers.Roboto.CustomTextView
+        android:id="@+id/subcategory_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        app:typeface="roboto_regular"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:gravity="left"
+        android:text="HandBags/BackPacks"
+        android:textColor="#666666" />
+
+    <View
+        android:id="@+id/view_category_list_up"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/subcategory_item"
+        android:layout_marginLeft="20dp"
+        android:background="#62969595" />
+</RelativeLayout>

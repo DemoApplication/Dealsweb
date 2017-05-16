@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="false"
+    android:background="@drawable/grid_color_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal">
+
+    <!--  <ImageView
+          android:id="@+id/nav_item_img"
+          android:scaleType="centerCrop"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+        android:src="@drawable/accessoriess"
+          android:layout_weight="0.1"
+          android:adjustViewBounds="true"
+          android:layout_margin="10dp"
+          android:clickable="false"
+          android:focusable="false"
+          android:focusableInTouchMode="false"
+
+          />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+
+
+        <com.ngagroupinc.movers.Roboto.CustomTextView
+            android:id="@+id/nav_item_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="adsafdsgsg"
+            app:typeface="roboto_regular"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:id="@+id/nav_right_arrow"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow"
+
+            />
+        <com.ngagroupinc.movers.Roboto.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:typeface="roboto_regular"
+            android:id="@+id/txtcount"/>
+    </RelativeLayout>
+
+</LinearLayout>
